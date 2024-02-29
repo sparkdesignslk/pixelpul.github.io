@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixelpulse Photography Studio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Comfortaa', sans-serif;
             background: #000;
             color: #fff;
         }
@@ -36,19 +38,16 @@
             padding: 20px;
         }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+        .intro {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        .photo {
-            width: 100%;
-            max-width: 400px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            .intro {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
@@ -63,15 +62,8 @@
     </header>
 
     <main>
-        <div class="gallery">
-            <!-- Add your photo entries here -->
-            <div class="photo">
-                <img src="your_photo_url.jpg" alt="Photo 1">
-            </div>
-            <div class="photo">
-                <img src="your_photo_url.jpg" alt="Photo 2">
-            </div>
-            <!-- Add more photo entries as needed -->
+        <div class="intro">
+            <p>Welcome to Pixelpulse Photography Studio, where we capture moments that last a lifetime. Our skilled photographers are dedicated to delivering stunning and memorable images for every occasion.</p>
         </div>
     </main>
 
